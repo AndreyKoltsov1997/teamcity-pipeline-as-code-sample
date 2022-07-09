@@ -4,14 +4,14 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.script
 version = "2022.04"
 
 project {
-  buildType {
-    id("Sample")
-    name = "Sample App"
+  buildType(SampleCommandLineBuild)
+}
+
+object SampleCommandLineBuild: BuildType({
+    name = "Sample Command Line Build"
     steps {
         script {
             scriptContent = "echo 'Hello world!'"
         }
     }
-  }
-}
-
+})
