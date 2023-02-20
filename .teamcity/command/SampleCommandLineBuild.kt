@@ -12,7 +12,7 @@ object SampleCommandLineBuild : BuildType({
         script {
             name = "Command Line Script"
             scriptContent =
-                "echo \"##teamcity[buildStatisticValue key='myReportedCustomStatisticValue' value='1000']\""
+                "echo \"##teamcity[buildStatisticValue key='myReportedCustomStatisticValue' value='not a number']\""
         }
     }
 
