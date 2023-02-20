@@ -5,6 +5,10 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.failureConditions.BuildFailureOnMetric
 import jetbrains.buildServer.configs.kotlin.failureConditions.failOnMetricChange
 
+import jetbrains.buildServer.configs.kotlin.*
+
+version = "2022.04"
+project(Project)
 
 object Project : Project({
     name = "Playground project"
