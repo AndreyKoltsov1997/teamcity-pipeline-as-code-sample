@@ -10,5 +10,5 @@ object PlaygroundProject : Project ({
     buildType(SampleCommandLineBuild)
 })
 
-version = "2022.04"
 project(PlaygroundProject)
+

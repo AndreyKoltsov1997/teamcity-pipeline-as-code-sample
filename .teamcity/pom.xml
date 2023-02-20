@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <project>
+      <modelVersion>4.0.0</modelVersion>
+      <name>TeamCity Pipeline As Code Sample</name>
+      <groupId>koltsov</groupId>
+      <artifactId>koltsov_kotlin_sample</artifactId>
+      <version>1.0-SNAPSHOT</version>
 
-    <modelVersion>4.0.0</modelVersion>
-    <name>TeamCity Pipeline As Code Sample</name>
-    <groupId>koltsov</groupId>
-    <artifactId>koltsov_kotlin_sample</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-  <parent>
-    <groupId>org.jetbrains.teamcity</groupId>
-    <artifactId>configs-dsl-kotlin-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
+    <parent>
+      <groupId>org.jetbrains.teamcity</groupId>
+      <artifactId>configs-dsl-kotlin-parent</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </parent>
 
   <repositories>
     <repository>
