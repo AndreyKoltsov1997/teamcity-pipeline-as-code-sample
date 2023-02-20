@@ -6,22 +6,19 @@ import jetbrains.buildServer.configs.kotlin.failureConditions.BuildFailureOnMetr
 import jetbrains.buildServer.configs.kotlin.failureConditions.failOnMetricChange
 import jetbrains.buildServer.configs.kotlin.project
 
-
-version = "2022.04"
-project(Project)
-
 object Project : Project({
     name = "Playground project"
     description = "A project without any specific purpose - it's being used as a playground for various DSL features."
     buildType(SampleCommandLineBuild)
-}
+})
 
-object SampleCommandLineBuild: BuildType({
+object SampleCommandLineBuild : BuildType({
     name = "Sample Command Line Build"
     steps {
         script {
             name = "Command Line Script"
-            scriptContent = "echo \"##teamcity[buildStatisticValue key='myReportedCustomStatisticValue' value='10']\""
+            scriptContent =
+                "echo \"##teamcity[buildStatisticValue key='myReportedCustomStatisticValue' value='10']\""
         }
     }
     failureConditions {
@@ -36,3 +33,6 @@ object SampleCommandLineBuild: BuildType({
         }
     }
 })
+
+version = "2022.04"
+project(Project)
