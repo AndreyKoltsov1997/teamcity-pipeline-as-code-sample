@@ -9,11 +9,14 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.failureConditions.failOnMetr
 
 object SampleCommandLineBuild : BuildType({
     name = "Sample Command Line Build"
+    params {
+        param("customMetricValue", "1")
+    }
     steps {
         script {
             name = "Command Line Script"
             scriptContent =
-                "echo \"##teamcity[buildStatisticValue key='myReportedCustomStatisticValue' value='1110']\""
+                "echo \"##teamcity[buildStatisticValue key='myReportedCustomStatisticValue' value='%customMetricValue%']\""
         }
     }
 
