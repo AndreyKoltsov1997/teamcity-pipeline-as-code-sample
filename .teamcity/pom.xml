@@ -22,6 +22,15 @@
     </repository>
   </repositories>
 
+  <repository>
+    <id>teamcity-server</id>
+<!--    'PLACEHOLDER_SERVER_URL' will be replaced with test instance's URL in runtime-->
+    <url>PLACEHOLDER_SERVER_URL/app/dsl-plugins-repository</url>
+    <snapshots>
+      <enabled>true</enabled>
+    </snapshots>
+  </repository>
+
   <pluginRepositories>
     <pluginRepository>
       <id>JetBrains</id>
