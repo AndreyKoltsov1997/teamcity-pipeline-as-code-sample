@@ -1,9 +1,9 @@
 package command
 
-import jetbrains.buildServer.configs.kotlin.v2019_2.BuildType
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.v2019_2.failureConditions.BuildFailureOnMetric
-import jetbrains.buildServer.configs.kotlin.v2019_2.failureConditions.failOnMetricChange
+import jetbrains.buildServer.configs.kotlin.BuildType
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.failureConditions.BuildFailureOnMetric
+import jetbrains.buildServer.configs.kotlin.failureConditions.failOnMetricChange
 
 
 
